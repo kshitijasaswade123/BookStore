@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "aaa91477-acf8-464e-9568-6ba6a4a2adae",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32248950"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nath mahraj\",\r\n    \"price\": \"130\",\r\n    \"author\": \"a.b pandit\",\r\n    \"year\":\"20-11-2000\",\r\n    \"cover\":\"xyz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/book/662b51e8780f21b1bcd9dc6f",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nath mahraj\",\r\n    \"price\": \"140\",\r\n    \"author\": \"a.b pandit\",\r\n    \"year\":\"20-11-2000\",\r\n    \"cover\":\"xyz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/book/662b51e8780f21b1bcd9dc6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"book",
+						"662b51e8780f21b1bcd9dc6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/book/662b52d3780f21b1bcd9dc73",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/book/662b52d3780f21b1bcd9dc73",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"book",
+						"662b52d3780f21b1bcd9dc73"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
